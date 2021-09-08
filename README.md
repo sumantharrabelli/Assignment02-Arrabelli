@@ -6,7 +6,7 @@ Miami, officially the City of Miami, is a **coastal metropolis** located in Miam
 ---
 
 # Directions from Maryville to Newjersey 
- 1.Directions from Maryville to NewJersey.
+    1.Directions from Maryville to NewJersey.
         1. start in Maryville (Missouri) drive for about 4 hours
         2. St.Joseph to Springfield
         3. Springfield to  Harristown.
@@ -15,7 +15,7 @@ Miami, officially the City of Miami, is a **coastal metropolis** located in Miam
 		6. Washington to Denver.
     2. Finally NewJersey.
 
-### Products to be packed for enjoyment.
+## Products to be packed for enjoyment.
     - Comfortable Shoes.
     - Weather Appropriate Clothes.
     - Jackets & Hoodies.
