@@ -183,7 +183,6 @@ pair<int, int> solve(const vector<seg>& a) {
         e.push_back(event(max(a[i].p.x, a[i].q.x), -1, i));  
     }  
     sort(e.begin(), e.end());  
-
         s.clear();  
         where.resize(a.size());  
         for (size_t i = 0; i < e.size(); ++i) {  
