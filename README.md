@@ -102,6 +102,7 @@ void convex_hull(vector<pt>& a) {
       for (int i = down.size() - 2; i > 0; i--)  
       a.push_back(down[i]);  
       }
+[Geometry Covex Hull Source Code](https://cp-algorithms.com/geometry/grahams-scan-convex-hull.html)
 
 A sweep line is an imaginary vertical line which is swept across the plane rightwards. That's why, the algorithms based on this concept are sometimes also called plane sweep algorithms. We sweep the line based on some events, in order to discretize the sweep.
 [More About Sweepline](https://www.hackerearth.com/practice/math/geometry/line-sweep-technique/tutorial/#:~:text=A%20sweep%20line%20is%20an,order%20to%20discretize%20the%20sweep.)
@@ -192,35 +193,25 @@ pair<int, int> solve(const vector<seg>& a) {
     return make_pair(-1, -1);  
 }  
 
+[Sweepline Source Code](https://cp-algorithms.com/geometry/intersecting_segments.html)
 
 MISC stands for 'Minimal Instruction Set Computing' or 'Minimal Instruction Set Computer'. MISC is RISC taken to the extreme, with only one instruction - 'subtract and branch if negative'. Despite this, MISC can perform any calculation computable by a normal RISC (Reduced Instruction Set Computing) or CISC (Complex Instruction Set Computing) machine.
 [More About Misc](https://esolangs.org/wiki/MISC#:~:text=MISC%20stands%20for%20'Minimal%20Instruction,subtract%20and%20branch%20if%20negative'.)
 
+int lis(vector<int> const& a) {
+    int n = a.size();
+    vector<int> d(n, 1);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < i; j++) {
+            if (a[j] < a[i])
+                d[i] = max(d[i], d[j] + 1);
+        }
+    }
 
-using cd = complex<double>;  
-const double PI = acos(-1);  
-
-  void fft(vector<cd> & a, bool invert) {  
-      int n = a.size();  
-      if (n == 1)  
-          return;  
-        vector<cd> a0(n / 2), a1(n / 2);  
-        for (int i = 0; 2 * i < n; i++) {  
-          a0[i] = a[2*i];  
-          a1[i] = a[2*i+1];  
-      }  
-      fft(a0, invert);  
-      fft(a1, invert);  
-        double ang = 2 * PI / n * (invert ? -1 : 1);  
-        cd w(1), wn(cos(ang), sin(ang));  
-        for (int i = 0; 2 * i < n; i++) {  
-          a[i] = a0[i] + w * a1[i];  
-          a[i + n/2] = a0[i] - w * a1[i];  
-          if (invert) {  
-              a[i] /= 2;  
-              a[i + n/2] /= 2;  
-          }  
-          w *= wn;  
-      }  
-  }  
-
+    int ans = d[0];
+    for (int i = 1; i < n; i++) {
+        ans = max(ans, d[i]);
+    }
+    return ans;
+}
+[Misc Source Code]()
