@@ -113,8 +113,7 @@ struct pt {
 struct seg {  
     pt p, q;  
     int id;  
-
-      double get_y(double x) const {  
+    double get_y(double x) const {  
           if (abs(p.x - q.x) < EPS)  
               return p.y;  
           return p.y + (q.y - p.y) * (x - p.x) / (q.x - p.x);  
