@@ -41,7 +41,7 @@ This is the beverage, location and price table
 | Cheeseburger	| Dominos	| $2.60    |
 
 ---
-# Quotes
+# Pithy Quotes
 
 >Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.
 
@@ -56,6 +56,7 @@ This is the beverage, location and price table
 In geometry, the convex hull or convex envelope or convex closure of a shape is the smallest convex set that contains it. The convex hull may be defined either as the intersection of all convex sets containing a given subset of a Euclidean space, or equivalently as the set of all convex combinations of points in the subset.
 [More About Geometry](https://en.wikipedia.org/wiki/Convex_hull)
 
+```
 struct pt {  
 
   double x, y;    
@@ -102,12 +103,15 @@ void convex_hull(vector<pt>& a) {
       for (int i = down.size() - 2; i > 0; i--)  
       a.push_back(down[i]);  
       }
-      
-[Geometry Covex Hull Source Code](https://cp-algorithms.com/geometry/grahams-scan-convex-hull.html)
+
+```
+
+grahams-scan-convex-hull [Geometry Covex Hull Source Code](https://cp-algorithms.com/geometry/grahams-scan-convex-hull.html)
 
 A sweep line is an imaginary vertical line which is swept across the plane rightwards. That's why, the algorithms based on this concept are sometimes also called plane sweep algorithms. We sweep the line based on some events, in order to discretize the sweep.
 [More About Sweepline](https://www.hackerearth.com/practice/math/geometry/line-sweep-technique/tutorial/#:~:text=A%20sweep%20line%20is%20an,order%20to%20discretize%20the%20sweep.)
 
+```
 const double EPS = 1E-9;  
 struct pt {  
     double x, y;  
@@ -194,11 +198,15 @@ pair<int, int> solve(const vector<seg>& a) {
     return make_pair(-1, -1);  
 }  
 
-[Sweepline Source Code](https://cp-algorithms.com/geometry/intersecting_segments.html)
+```
+
+intersecting_segments [Sweepline Source Code](https://cp-algorithms.com/geometry/intersecting_segments.html)
 
 MISC stands for 'Minimal Instruction Set Computing' or 'Minimal Instruction Set Computer'. MISC is RISC taken to the extreme, with only one instruction - 'subtract and branch if negative'. Despite this, MISC can perform any calculation computable by a normal RISC (Reduced Instruction Set Computing) or CISC (Complex Instruction Set Computing) machine.
+
 [More About Misc](https://esolangs.org/wiki/MISC#:~:text=MISC%20stands%20for%20'Minimal%20Instruction,subtract%20and%20branch%20if%20negative'.)
 
+```
 int lis(vector<int> const& a) {  
     int n = a.size();  
     vector<int> d(n, 1);  
@@ -214,4 +222,6 @@ int lis(vector<int> const& a) {
     }  
     return ans;  
 }  
-[Misc Source Code](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
+```
+
+longest_increasing_subsequence [Misc Source Code](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
