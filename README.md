@@ -29,3 +29,15 @@ Miami, officially the City of Miami, is a **coastal metropolis** located in Miam
 
 [Aboutme](AboutMe.md)
 
+---
+	## Beverage Section
+This is the beverage, location and price table
+
+| Food		    |  Location | Price    |
+| ------------- | --------- | -------- |
+| Egg McMuffin	| McDonalds	| $1.50    |
+| Chicken tacos | Taco john's| $3.70   |
+| Chickenranch  | Subway	| $5.20    |
+| Cheeseburger	| Dominos	| $2.60    |
+
+---
