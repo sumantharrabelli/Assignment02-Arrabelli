@@ -107,11 +107,9 @@ A sweep line is an imaginary vertical line which is swept across the plane right
 [More About Sweepline](https://www.hackerearth.com/practice/math/geometry/line-sweep-technique/tutorial/#:~:text=A%20sweep%20line%20is%20an,order%20to%20discretize%20the%20sweep.)
 
 const double EPS = 1E-9;  
-
 struct pt {  
     double x, y;  
 };  
-
 struct seg {  
     pt p, q;  
     int id;  
@@ -122,7 +120,6 @@ struct seg {
           return p.y + (q.y - p.y) * (x - p.x) / (q.x - p.x);  
       }  
 };  
-
 bool intersect1d(double l1, double r1, double l2, double r2) {  
     if (l1 > r1)  
         swap(l1, r1);  
@@ -153,28 +150,22 @@ bool operator<(const seg& a, const seg& b)
 struct event {  
     double x;  
     int tp, id;  
-
-      event() {}  
+     event() {}  
       event(double x, int tp, int id) : x(x), tp(tp), id(id) {}  
-  
-     bool operator<(const event& e) const {  
+    bool operator<(const event& e) const {  
           if (abs(x - e.x) > EPS)  
               return x < e.x;  
           return tp > e.tp;  
       }  
 };  
-
 set<seg> s;  
 vector<set<seg>::iterator> where;  
-
 set<seg>::iterator prev(set<seg>::iterator it) {  
     return it == s.begin() ? s.end() : --it;  
 }  
-
 set<seg>::iterator next(set<seg>::iterator it) {  
     return ++it;  
 }  
-
 pair<int, int> solve(const vector<seg>& a) {  
     int n = (int)a.size();  
     vector<event> e;  
