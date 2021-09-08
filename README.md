@@ -213,4 +213,4 @@ int lis(vector<int> const& a) {
     }  
     return ans;  
 }  
-[Misc Source Code]()
+[Misc Source Code](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
