@@ -97,12 +97,12 @@ void convex_hull(vector<pt>& a) {
           }  
       }  
   
-      a.clear();  
-      for (int i = 0; i < (int)up.size(); i++)  
-          a.push_back(up[i]);  
-      for (int i = down.size() - 2; i > 0; i--)  
-          a.push_back(down[i]);  
-  }  
+    a.clear();  
+    for (int i = 0; i < (int)up.size(); i++)  
+    a.push_back(up[i]);  
+    for (int i = down.size() - 2; i > 0; i--)  
+    a.push_back(down[i]);  
+    }  
 
 A sweep line is an imaginary vertical line which is swept across the plane rightwards. That's why, the algorithms based on this concept are sometimes also called plane sweep algorithms. We sweep the line based on some events, in order to discretize the sweep.
 [More About Sweepline](https://www.hackerearth.com/practice/math/geometry/line-sweep-technique/tutorial/#:~:text=A%20sweep%20line%20is%20an,order%20to%20discretize%20the%20sweep.)
