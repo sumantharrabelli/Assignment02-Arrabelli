@@ -102,6 +102,7 @@ void convex_hull(vector<pt>& a) {
       for (int i = down.size() - 2; i > 0; i--)  
       a.push_back(down[i]);  
       }
+      
 [Geometry Covex Hull Source Code](https://cp-algorithms.com/geometry/grahams-scan-convex-hull.html)
 
 A sweep line is an imaginary vertical line which is swept across the plane rightwards. That's why, the algorithms based on this concept are sometimes also called plane sweep algorithms. We sweep the line based on some events, in order to discretize the sweep.
