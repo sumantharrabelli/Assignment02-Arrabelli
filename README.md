@@ -184,26 +184,26 @@ pair<int, int> solve(const vector<seg>& a) {
     }  
     sort(e.begin(), e.end());  
 
-      s.clear();  
-      where.resize(a.size());  
-      for (size_t i = 0; i < e.size(); ++i) {  
-          int id = e[i].id;  
-          if (e[i].tp == +1) {  
-              set<seg>::iterator nxt = s.lower_bound(a[id]), prv = prev(nxt);  
-              if (nxt != s.end() && intersect(*nxt, a[id]))  
-                  return make_pair(nxt->id, id);  
-              if (prv != s.end() && intersect(*prv, a[id]))  
-              return make_pair(prv->id, id);  
-              where[id] = s.insert(nxt, a[id]);  
-          } else {  
-              set<seg>::iterator nxt = next(where[id]), prv = prev(where[id]);  
-              if (nxt != s.end() && prv != s.end() && intersect(*nxt, *prv))  
-                  return make_pair(prv->id, nxt->id);  
-              s.erase(where[id]);  
-          }  
-      }  
-
-    return make_pair(-1, -1);  
+        s.clear();  
+        where.resize(a.size());  
+        for (size_t i = 0; i < e.size(); ++i) {  
+         int id = e[i].id;  
+            if (e[i].tp == +1) {  
+                set<seg>::iterator nxt = s.lower_bound(a[id]), prv = prev(nxt);  
+                if (nxt != s.end() && intersect(*nxt, a[id]))  
+                    return make_pair(nxt->id, id);  
+                if (prv != s.end() && intersect(*prv, a[id]))  
+                return make_pair(prv->id, id);  
+                where[id] = s.insert(nxt, a[id]);  
+            } else {  
+                set<seg>::iterator nxt = next(where[id]), prv = prev(where[id]);  
+                if (nxt != s.end() && prv != s.end() && intersect(*nxt, *prv))  
+                    return make_pair(prv->id, nxt->id);  
+                s.erase(where[id]);  
+            }  
+        }  
+  
+      return make_pair(-1, -1);  
 }  
 
 
