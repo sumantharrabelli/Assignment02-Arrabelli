@@ -139,14 +139,12 @@ bool intersect(const seg& a, const seg& b)
            vec(a.p, a.q, b.p) * vec(a.p, a.q, b.q) <= 0 &&  
            vec(b.p, b.q, a.p) * vec(b.p, b.q, a.q) <= 0;  
 }  
-
 bool operator<(const seg& a, const seg& b)  
 {  
     double x = max(min(a.p.x, a.q.x), min(b.p.x, b.q.x));  
     return a.get_y(x) < b.get_y(x) - EPS;  
 }  
- 
-struct event {  
+ struct event {  
     double x;  
     int tp, id;  
      event() {}  
@@ -191,8 +189,7 @@ pair<int, int> solve(const vector<seg>& a) {
                 s.erase(where[id]);  
             }  
         }  
-  
-      return make_pair(-1, -1);  
+    return make_pair(-1, -1);  
 }  
 
 
