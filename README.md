@@ -51,6 +51,7 @@ This is the beverage, location and price table
 
 ---
 
+# Pithy Quotes
 # Geometry Convex hull, Sweepline, Misc
 
 In geometry, the convex hull or convex envelope or convex closure of a shape is the smallest convex set that contains it. The convex hull may be defined either as the intersection of all convex sets containing a given subset of a Euclidean space, or equivalently as the set of all convex combinations of points in the subset.
