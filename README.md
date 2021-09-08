@@ -53,5 +53,12 @@ This is the beverage, location and price table
 
 # Geometry Convex hull, Sweepline, Misc
 
+In geometry, the convex hull or convex envelope or convex closure of a shape is the smallest convex set that contains it. The convex hull may be defined either as the intersection of all convex sets containing a given subset of a Euclidean space, or equivalently as the set of all convex combinations of points in the subset.
+[More About Geometry](https://en.wikipedia.org/wiki/Convex_hull)
 
-dmfkdmfl
+A sweep line is an imaginary vertical line which is swept across the plane rightwards. That's why, the algorithms based on this concept are sometimes also called plane sweep algorithms. We sweep the line based on some events, in order to discretize the sweep.
+[More About Sweepline](https://www.hackerearth.com/practice/math/geometry/line-sweep-technique/tutorial/#:~:text=A%20sweep%20line%20is%20an,order%20to%20discretize%20the%20sweep.)
+
+
+MISC stands for 'Minimal Instruction Set Computing' or 'Minimal Instruction Set Computer'. MISC is RISC taken to the extreme, with only one instruction - 'subtract and branch if negative'. Despite this, MISC can perform any calculation computable by a normal RISC (Reduced Instruction Set Computing) or CISC (Complex Instruction Set Computing) machine.
+[More About Misc](https://esolangs.org/wiki/MISC#:~:text=MISC%20stands%20for%20'Minimal%20Instruction,subtract%20and%20branch%20if%20negative'.)
