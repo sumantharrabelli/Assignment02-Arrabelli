@@ -43,6 +43,8 @@ This is the beverage, location and price table
 ---
 # Pithy Quotes
 
+As **Stephen King** said:
+
 >Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.
 
 >We must not allow other people’s limited perceptions to define us.
