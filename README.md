@@ -198,20 +198,19 @@ pair<int, int> solve(const vector<seg>& a) {
 MISC stands for 'Minimal Instruction Set Computing' or 'Minimal Instruction Set Computer'. MISC is RISC taken to the extreme, with only one instruction - 'subtract and branch if negative'. Despite this, MISC can perform any calculation computable by a normal RISC (Reduced Instruction Set Computing) or CISC (Complex Instruction Set Computing) machine.
 [More About Misc](https://esolangs.org/wiki/MISC#:~:text=MISC%20stands%20for%20'Minimal%20Instruction,subtract%20and%20branch%20if%20negative'.)
 
-int lis(vector<int> const& a) {
-    int n = a.size();
-    vector<int> d(n, 1);
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < i; j++) {
-            if (a[j] < a[i])
-                d[i] = max(d[i], d[j] + 1);
-        }
-    }
-
-    int ans = d[0];
-    for (int i = 1; i < n; i++) {
-        ans = max(ans, d[i]);
-    }
-    return ans;
-}
+int lis(vector<int> const& a) {  
+    int n = a.size();  
+    vector<int> d(n, 1);  
+    for (int i = 0; i < n; i++) {  
+        for (int j = 0; j < i; j++) {  
+            if (a[j] < a[i])  
+                d[i] = max(d[i], d[j] + 1);  
+        }  
+    }  
+    int ans = d[0];  
+    for (int i = 1; i < n; i++) {  
+        ans = max(ans, d[i]);  
+    }  
+    return ans;  
+}  
 [Misc Source Code]()
