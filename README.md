@@ -12,7 +12,7 @@ Miami, officially the City of Miami, is a **coastal metropolis** located in Miam
         3. Springfield to  Harristown.
         4. Harristown to Oakwood.
         5. Oakwood to Washington.
-		6. Washington to Denver.
+        6. Washington to Denver.
     2. Finally NewJersey.
 
 ## Products to be packed for enjoyment.
